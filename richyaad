@@ -1,0 +1,16 @@
+users_data_base = dict(Mike = "Speedy203", Ken = "Justify30", Marvin = "Pop_Jay")
+while True:
+    current_user = input("Enter User Name: ")
+    if current_user not  in users_data_base:
+        print("User name not valid")
+    else:       
+        print("Welcome " + current_user)
+        break
+while True:
+    pw_entry = input("Please enter password: ")
+    if pw_entry == users_data_base[current_user]:
+        print("Sucessful entry")
+        break
+    else:
+        print("Incorrect password entry")
+        print("Try again")
